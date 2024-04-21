@@ -110,7 +110,7 @@ def get_recs(ingredients,mean=False, N=6):
 
   if mean:
 
-    mean_vec_tr = MeanEmbeddingVectoriser(model)
+    mean_vec_tr = MeanEmbeddingVectoriser(model) # type: ignore
     doc_vec = mean_vec_tr.transform(corpus)
     doc_vec = [doc.reshape(1,-1) for doc in doc_vec]
     assert len(doc_vec) == len(corpus)
