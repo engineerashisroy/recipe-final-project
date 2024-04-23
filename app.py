@@ -195,7 +195,7 @@ def generateList():
             print("At least one ingredient is not empty.")
 
             # Combine all ingredients into a single string
-            ingredients = ', '.join([first_ingredient, second_ingredient, third_ingredient,
+            ingredients = ','.join([first_ingredient, second_ingredient, third_ingredient,
                                     fourth_ingredient, fifth_ingredient, sixth_ingredient])
             # print(ingredients)
             # input = "bell pepper ,potato ,tomato"
@@ -218,6 +218,3 @@ def generateList():
 
 
 
-
-if __name__ == "__main__":
-    app.run(host= '0.0.0.0' ,debug =True)
